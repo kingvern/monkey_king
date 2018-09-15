@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const Avatar = () => (
-    <div className="bg_bed" >
+    <div className="avatar" >
         <h1>头像</h1>
     </div>
 

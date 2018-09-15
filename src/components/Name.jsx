@@ -1,10 +1,7 @@
 import React from 'react'
 
-
 import Modal from 'react-modal';
-import connect from "react-redux/es/connect/connect";
-
-require('./style/example.css')
+import {connect} from "react-redux";
 
 
 const modalStyle = {
@@ -18,15 +15,7 @@ const modalStyle = {
     }
 };
 
-const Item = ({row, idx}) => {
-    return (
-        <div className="rank_list_item" key={idx}>
-            <h1>{row}</h1>
-        </div>
-    )
-}
-
-class Example extends React.Component {
+class Name extends React.Component {
 
 
     render() {
@@ -35,19 +24,13 @@ class Example extends React.Component {
                 <img onClick={this.props.openModal}/>
                 <Modal
                     isOpen={this.props.modalIsOpen}
-                    onRequestClose={this.props.closeModal}
                     style={modalStyle}
                     contentLabel=""
                 >
 
                     <div>
-                        <div>
-                            {this.props.rowData.map((row, idx) => (
-                                <Item idx={idx}
-                                      row={row}/>
-                            ))}
-                        </div>
-                        <button onClick={this.props.openModal}>close</button>
+                        <input value={this.props.nameInput} onChange={this.props.handleChangeNameInput} />
+                        <button onClick={this.props.handleSetNameInput}>确定</button>
                     </div>
                 </Modal>
             </div>
@@ -69,17 +52,29 @@ const mapDispatchToProps = (dispatch) => {
                 type: 'close_modal'
             }
             dispatch(action);
-        }
+        },
+        handleChangeNameInput(e){
+            const action = {
+                type: 'change_name_input',
+                value: e.target.value
+            }
+            dispatch(action);
+        },
+
+        handleSetNameInput(){
+            const action = {
+                type: 'set_name'
+            }
+            dispatch(action);
+        },
     }
 }
 
 const mapStateToProps = (state) => {
     return {
         rowData: state.rowData,
-        times: state.times,
-        texts: state.texts,
         modalIsOpen: state.modalIsOpen
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Example);
+export default connect(mapStateToProps, mapDispatchToProps)(Name);

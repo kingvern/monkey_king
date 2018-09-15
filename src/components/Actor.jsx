@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-const Actor = () => (
-    <div className="bg_bed">
-        <h1>头像</h1>
+const Actor = ({id, src}) => (
+    <div className="actor" id={id}>
+        <img className="actorImg" src={src} />
     </div>
 )
 

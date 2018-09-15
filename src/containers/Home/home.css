@@ -98,8 +98,6 @@ height:100%;
     heigth:768px;
     display: block;
     margin:0 auto;
-    background: #aaaaaa;
-    background-size: cover;
 }
 .panel{
     display: flex;
@@ -146,6 +144,11 @@ height:100%;
     background: #777;
 }
 
+.actorImg{
+    width: 100px;
+    height: 160px;
+}
+
 #sun{
     position: absolute;
     top:300px;
@@ -165,4 +168,25 @@ height:100%;
     background: #aaaaaa;
     top: 0;
     left: 0;
+}
+.bgImg{
+    width:1377px;
+    heigth:768px;
+}
+
+.hide{
+    display: none;
+}
+.bgDiv{
+    position: absolute;
+    width: 1377px;
+    height: 768px;
+    top: 0;
+    left: 0;
+    background: antiquewhite;
+    z-index: -1;
+}
+.avatarImg{
+    width: 100px;
+    height: 100px;
 }
