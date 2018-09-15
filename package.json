@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "wallet": "git+https://github.com/wkorz/wallet.git"
   },
   "scripts": {
     "start": "react-scripts start",
