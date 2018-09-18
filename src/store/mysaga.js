@@ -10,10 +10,6 @@ const main = web3.loadContract(
 );
 console.log(main);
 
-const from_address = web3.eth.accounts[0]
-const monkey_key = ''
-const player_key = ''
-const fight = ''
 
 // function GetMonkeyListener() {
 //     var myEvent = main.BuyMonkeySuccess({}, {fromBlock: 0, toBlock: 'latest'});
@@ -42,6 +38,7 @@ function* FreeMonkey() {
 //抢猴子
 function* BuyMonkey(action) {
     try {
+        var from_address = yield web3.eth.getAccounts()
         var res = yield axios.get(api + get_buy_min_value + action.key + '/' + from_address);
         var buy_min_value = res.data
         console.log('get_buy_min_value', buy_min_value)
