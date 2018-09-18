@@ -6,7 +6,7 @@ import {web3} from "wallet";
 const abi = require("../abi/MonkeyCore").abi;
 const main = web3.loadContract(
     abi,
-    "0xe7ef2d14332ca194b21c316a4f6e871bb432e72a"
+    "0x51e75333304a38805eb191a27bd3c5487f9d52df"
 );
 console.log(main);
 

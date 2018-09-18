@@ -15,8 +15,13 @@ import Training from "../../components/Training";
 
 class Home extends React.Component {
     componentDidMount() {
-        this.props.load()
 
+        this.timerID = setInterval(
+            () => {
+                this.props.load()
+            },
+            2000
+        );
 
     }
 
