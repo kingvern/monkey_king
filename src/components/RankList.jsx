@@ -7,15 +7,17 @@ class RankList extends React.Component {
 
     renderItem = (rowData,idx) => {
         return (
-            <div key={idx}>{rowData}</div>
+            <div key={idx}>{rowData[0]}-{rowData[1]}-{rowData[2]}-{rowData[3]}-{rowData[4]}-{rowData[5]}</div>
         )
     }
 
     render() {
         return (
             <div onClick={this.props.handleHideRank} className={this.props.rankIsOpen ? 'rank_panel' : 'hide'}>
-                <h1>排位榜</h1>
-                {this.props.rankData.map((rowData,idx) => this.renderItem(rowData,idx))}
+                <h1>战力排位榜</h1>
+                {this.props.fightRankData.map((rowData,idx) => this.renderItem(rowData,idx))}
+                <h1>通关次数排位榜</h1>
+                {this.props.timesRankData.map((rowData,idx) => this.renderItem(rowData,idx))}
             </div>
         )
     }
@@ -36,7 +38,8 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
-        rankData: state.rankData,
+        fightRankData: state.fightRankData,
+        timesRankData: state.timesRankData,
         rankIsOpen: state.rankIsOpen
     }
 }

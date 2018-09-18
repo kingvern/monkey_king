@@ -9,32 +9,51 @@ import Name from "../../components/Name.jsx";
 import images from '../../theme/images'
 
 import './home.css'
+import LevelList from "../../components/LevelList";
 
 class Home extends React.Component {
+    componentDidMount() {
+        this.props.load()
+    }
+
     render() {
         return (
             <React.Fragment>
-                {/*<div className="stage" onClick={this.props.handleGetLength}>*/}
-                    {/*<div>{this.props.res}</div>*/}
                 <div className="stage">
+
                     <div className='bgDiv' >
-                        <img className='bgImg' src={images.bg} />
+                        <img className='bgImg' src={images.stage01} />
                     </div>
                     <Panel />
                     <RankList />
-                    <Actor id={'sun'} src={images.sun} />
-                    <Actor id={'tang'} src={images.tang} />
-                    <Name />
+                    <LevelList />
+                    {this.props.hasMonkey ? <Actor id={'sun'} src={images.monkey1} /> : <h1 onClick={this.props.freeMonkey}>免费获取猴子</h1>}
+                    <Actor id={'tang'} src={images.tangseng} />
+                    {/*<Name />*/}
                 </div>
+
+                <div className='white'>res: {this.props.res}</div>
             </React.Fragment>)
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        handleGetLength() {
+        handleEvent() {
             const action = {
-                type: 'get_length'
+                type: 'handle_event'
+            }
+            dispatch(action);
+        },
+        load() {
+            const action = {
+                type: 'load'
+            }
+            dispatch(action);
+        },
+        freeMonkey() {
+            const action = {
+                type: 'free_monkey'
             }
             dispatch(action);
         }
@@ -43,7 +62,22 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
-        res: state.res
+        avatar: images.avatar,
+        res: state.res,
+        rankIsOpen: state.rankIsOpen,
+        fight: state.fight,
+        state: state.state,
+        level: state.level,
+        power: state.power,
+        modalIsOpen: state.modalIsOpen,
+        nameInput: state.nameInput,
+        name: state.name,
+        rankData:state.rankData,
+        fightRankData:state.fightRankData,
+        timesRankData:state.timesRankData,
+        monkey:state.monkey,
+        player:state.player,
+        hasMonkey:state.hasMonkey
     }
 }
 

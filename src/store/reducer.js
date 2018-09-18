@@ -3,15 +3,21 @@ import images from '../theme/images'
 const initState = {
 	avatar: images.avatar,
 	res: '',
-    rankData:[1,2,3,4,5],
-	rankIsOpen: false,
     fight: 0,
 	state: true,
 	level: 0,
 	power: 100,
+    rankIsOpen: false,
     modalIsOpen: true,
+    levelIsOpen: false,
     nameInput: '',
-	name: ''
+	name: '',
+    rankData:[1,2,3,4,5],
+    fightRankData:[],
+    timesRankData:[],
+    monkey:[],
+    player:[],
+    hasMonkey:false
 }
 
 export default (state = initState,action) => {
@@ -19,7 +25,8 @@ export default (state = initState,action) => {
 	//rankList
     if( action.type === 'set_rank_data'){
         const newState = JSON.parse(JSON.stringify(state));
-        newState.rankData = action.data;
+        newState.fightRankData = action.data[0];
+        newState.timesRankData = action.data[1];
         return newState;
     }
 
@@ -31,6 +38,25 @@ export default (state = initState,action) => {
     if( action.type === 'hide_rank'){
         const newState = JSON.parse(JSON.stringify(state));
         newState.rankIsOpen = false;
+        return newState;
+    }
+
+    //LevelList
+    if( action.type === 'set_level_data'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.fightRankData = action.data[0];
+        newState.timesRankData = action.data[1];
+        return newState;
+    }
+
+    if( action.type === 'show_level'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.levelIsOpen = true;
+        return newState;
+    }
+    if( action.type === 'hide_level'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.levelIsOpen = false;
         return newState;
     }
 
@@ -57,8 +83,23 @@ export default (state = initState,action) => {
         return newState;
     }
 
+    if( action.type === 'have_monkey') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.hasMonkey = true;
+        return newState;
+    }
+
 
 	//example
+
+    if( action.type === 'load_data') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.res = action.data;
+        return newState;
+    }
+
+
+    //
 	if( action.type === 'init_list_data'){
 		const newState = JSON.parse(JSON.stringify(state));
 		newState.list = action.data;

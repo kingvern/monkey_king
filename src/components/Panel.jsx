@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from "react-redux/";
+import images from "../theme/images";
 
 class Panel extends React.Component {
 
@@ -10,6 +11,7 @@ class Panel extends React.Component {
     render() {
         return (
             <div className="panel">
+                <img className='panel_bg' src={images.panel_bg} />
                 <div className="avatar" >
                     <img className='avatarImg' src={this.props.avatar} />
                 </div>
@@ -23,7 +25,8 @@ class Panel extends React.Component {
                     <h3>{this.props.power}</h3>
                 </div>
                 <div className="history">
-                    <h3>目前通关数</h3>
+                    <h3 onClick={this.props.showLevel}
+                    >目前通关数</h3>
                     <h3>{this.props.level}</h3>
                 </div>
                 <div className="rank_button">
@@ -51,6 +54,13 @@ const mapDispatchToProps = (dispatch) => {
             }
             dispatch(action);
         },
+        showLevel() {
+
+            const action = {
+                type: 'show_level'
+            }
+            dispatch(action);
+        },
         refreshRankData() {
             const action = {
                 type: 'refresh_rank_data'
@@ -61,6 +71,8 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
+
+    console.log('state',state)
     return {
         avatar: state.avatar,
         rowData: state.rowData,
