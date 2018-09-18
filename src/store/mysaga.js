@@ -6,11 +6,8 @@ import {web3} from "wallet";
 const abi = require("../abi/MonkeyCore").abi;
 const main = web3.loadContract(
     abi,
-    "0x67da03db2943387c613439fba2375e18f8cf1e13"
+    "0xe7ef2d14332ca194b21c316a4f6e871bb432e72a"
 );
-var accounts = web3.eth.accounts;
-console.log(web3.eth.getAccounts());
-console.log(web3.eth.accounts[0])
 console.log(main);
 
 const from_address = web3.eth.accounts[0]
@@ -37,54 +34,67 @@ function* FreeMonkey() {
     try {
         const res = yield main.FreeMonkey();
         console.log(res)
-        yield put({type: "get_monkey", data: res});
     } catch (e) {
         console.log(e)
     }
 }
+
+//抢猴子
+function* BuyMonkey(action) {
+    try {
+        var res = yield axios.get(api + get_buy_min_value + action.key + '/' + from_address);
+        var buy_min_value = res.data
+        console.log('get_buy_min_value', buy_min_value)
+
+        var value = web3.toWei(buy_min_value,'wei');
+        var key = action.key;
+        res = yield main.BuyMonkey(key,{value});
+
+    } catch (e) {
+        console.log(e)
+    }
+}
+
 
 //领取体力 5点
 function* FreePower() {
     try {
         const res = yield main.FreePower();
         console.log('FreePower', res)
-        yield put({type: "change_res", data: res});
     } catch (e) {
         console.log(e)
     }
 }
 
 //购买体力 （1点体力0.001eth）
-function* BuyPower() {
+function* BuyPower(action) {
     try {
-        const power = 1;
-        const res = yield main.BuyPower(power);
+        var value = web3.toWei(action.value * 0.001,'ether')
+        const res = yield main.BuyPower(action.value,{value});
         console.log('BuyPower', res)
-        yield put({type: "change_res", data: res});
+        yield put({type: "close_power_modal"});
     } catch (e) {
         console.log(e)
     }
 }
 
 //修炼 （1战斗值0.0001eth）
-function* Training() {
+function* Training(action) {
     try {
-        const fight = 1;
-        const res = yield main.Training(fight);
+        var value = web3.toWei(action.value * 0.0002,'ether');
+        const res = yield main.Training(action.value,{value});
         console.log('Training', res)
-        yield put({type: "change_res", data: res});
+        yield put({type: "close_fight_modal"});
     } catch (e) {
         console.log(e)
     }
 }
 
 //闯关 关卡的key值
-function* UpgradeLevel() {
+function* UpgradeLevel(action) {
     try {
-        const key = '';
-        const res = yield main.UpgradeLevel(key);
+        const res = yield main.UpgradeLevel(action.key);
         console.log('UpgradeLevel', res)
-        yield put({type: "change_res", data: res});
     } catch (e) {
         console.log(e)
     }
@@ -104,6 +114,7 @@ const get_level_info = '/travelmonkey/api/v1/get_level_info/'
 const get_training_value = '/travelmonkey/api/v1/get_training_value/'
 const rank_list = '/travelmonkey/api/v1/rank_list/'
 const get_player_length = '/travelmonkey/api/v1/get_player_length/'
+const get_all_level_info = '/travelmonkey/api/v1/get_all_level_info/'
 
 function* test() {
     //1,get from_address
@@ -191,6 +202,7 @@ function* test() {
 }
 
 function* load() {
+    console.log('load start')
     //1,get from_address
     var from_address = yield web3.eth.getAccounts()
     console.log('from_address', from_address)
@@ -202,6 +214,8 @@ function* load() {
     if (res.data[1] == 0) {
         yield put({type: "no_monkey"});
     } else {
+        yield put({type: "has_monkey"});
+
         res = yield axios.get(api + get_player_info + player_key + '/' + from_address);
         var player = {
             key: res.data[0],
@@ -211,7 +225,9 @@ function* load() {
             logintime: res.data[4],
             state: res.data[5]
         }
-        console.log('get_player_info', player)
+        console.log('set_player_info', player)
+        var nextLevel = player.level + 1
+        yield put({type: "set_player_info", player});
 
         res = yield axios.get(api + get_monkey_info + monkey_key + '/' + from_address);
         var monkey = {
@@ -222,38 +238,44 @@ function* load() {
             owner: res.data[4],
             value: res.data[5]
         }
-        console.log('get_monkey_info', monkey)
+        console.log('set_monkey_info', monkey)
+        yield put({type: "set_monkey_info", monkey});
 
-        var fight = monkey.fight
+        res = yield axios.get(api + get_all_level_info + from_address);
+        console.log('get_level_info', res)
+        var levelsRaw = res.data;
+        var levels = []
+        levelsRaw.map(levelRaw => {
+            var level = {
+                key: levelRaw[0],
+                difficulty: levelRaw[1],
+                special: levelRaw[2],
+                specialcount: levelRaw[3],
+                allcount: levelRaw[4],
+                addrange: levelRaw[5],
+                addmin: levelRaw[6],
+                state: levelRaw[7]
+            }
+            levels.push(level)
+        })
+        console.log('levels', levels)
+        yield put({type: "set_levels_info", levels});
+        yield put({type: "set_next_difficulty", nextDifficulty:levels[nextLevel].difficulty});
 
-        res = yield axios.get(api + get_training_value + fight + '/' + from_address);
-        var training_value = res.data
-        console.log('get_training_value', training_value)
     }
 
     //静态方法
     res = yield axios.get(api + get_free_monkey_count + from_address);
     console.log('get_free_monkey_count', res.data)
 
-    res = yield axios.get(api + rank_list + from_address);
-    console.log('战力猴子排行', res.data[0]);
-    console.log('通关次数猴子排行', res.data[0]);
-
     res = yield axios.get(api + get_level_length + from_address);
     console.log('get_level_length', res.data)
 
-    res = yield axios.get(api + get_level_info + player_key + '/' + from_address);
-    var level = {
-        key: res.data[0],
-        difficulty: res.data[1],
-        special: res.data[2],
-        specialcount: res.data[3],
-        allcount: res.data[4],
-        addrange: res.data[5],
-        addmin: res.data[6],
-        state: res.data[7]
-    }
-    console.log('get_level_info', level)
+
+    res = yield axios.get(api + rank_list + from_address);
+    console.log('战力猴子排行', res.data[0]);
+    console.log('通关次数猴子排行', res.data[1]);
+    yield put({type: "set_rank_data", data: res.data});
 
     res = yield axios.get(api + get_player_length + from_address);
     var player_length = res.data
@@ -263,21 +285,21 @@ function* load() {
 }
 
 function* refreshRankData() {
-    try {
-        const res = yield axios.get(api + rank_list);
-        console.log('战力猴子排行', res.data[0]);
-        console.log('通关次数猴子排行', res.data[0]);
-        yield put({type: "set_rank_data", data: res.data});
-    } catch (e) {
-        console.log(e)
-    }
+
 }
 
 
 function* mySaga() {
     yield takeEvery("load", load);
     yield takeEvery("refresh_rank_data", refreshRankData);
+
+    yield takeEvery("buy_power", BuyPower);
     yield takeEvery("free_monkey", FreeMonkey)
+    yield takeEvery("training", Training);
+    yield takeEvery("free_power", FreePower);
+    yield takeEvery("buy_monkey", BuyMonkey);
+    yield takeEvery("upgrade_level", UpgradeLevel);
+
 }
 
 

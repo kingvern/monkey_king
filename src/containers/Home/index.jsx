@@ -10,11 +10,17 @@ import images from '../../theme/images'
 
 import './home.css'
 import LevelList from "../../components/LevelList";
+import Power from "../../components/Power";
+import Training from "../../components/Training";
 
 class Home extends React.Component {
     componentDidMount() {
         this.props.load()
+
+
     }
+
+
 
     render() {
         return (
@@ -22,9 +28,12 @@ class Home extends React.Component {
                 <div className="stage">
 
                     <div className='bgDiv' >
+                        <img className='bgAni' src={images.stage00} />
                         <img className='bgImg' src={images.stage01} />
                     </div>
                     <Panel />
+                    <Power />
+                    <Training />
                     <RankList />
                     <LevelList />
                     {this.props.hasMonkey ? <Actor id={'sun'} src={images.monkey1} /> : <h1 onClick={this.props.freeMonkey}>免费获取猴子</h1>}
@@ -32,7 +41,7 @@ class Home extends React.Component {
                     {/*<Name />*/}
                 </div>
 
-                <div className='white'>res: {this.props.res}</div>
+                {/*<div className='white'>res: {this.props.res}</div>*/}
             </React.Fragment>)
     }
 }
@@ -46,6 +55,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(action);
         },
         load() {
+            console.log('start load')
             const action = {
                 type: 'load'
             }

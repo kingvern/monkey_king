@@ -6,10 +6,25 @@ import images from '../theme/images'
 class LevelList extends React.Component {
 
 
+    // key: levelRaw[0],
+    // difficulty: levelRaw[1],
+    // special: levelRaw[2],
+    // specialcount: levelRaw[3],
+    // allcount: levelRaw[4],
+    // addrange: levelRaw[5],
+    // addmin: levelRaw[6],
+    // state: levelRaw[7]
 
-    renderItem = (rowData,idx) => {
+    handleUpgradeLevel(key) {
+        if(this.props.UpgradeLevel){
+            this.props.UpgradeLevel(key)
+        }
+    }
+
+    renderLevel = (level, idx) => {
         return (
-            <div key={idx}>{rowData[0]}-{rowData[1]}-{rowData[2]}-{rowData[3]}-{rowData[4]}-{rowData[5]}</div>
+            <div key={idx} onClick={this.handleUpgradeLevel.bind(this,level.key)}>{level.key}-{level.difficulty}-{level.special}-{level.specialcount}-{level.allcount}-{level.addrange}
+            -{level.addmin}-{level.state}</div>
         )
     }
 
@@ -17,7 +32,8 @@ class LevelList extends React.Component {
         return (
             <div onClick={this.props.handleHideRank} className={this.props.levelIsOpen ? 'level_panel' : 'hide'}>
 
-                <img className='panel_bg' src={images.level_bg} />
+                <img className='level_bg' src={images.level_panel}/>
+                {this.props.levels.map((level, idx) => this.renderLevel(level, idx))}
             </div>
         )
     }
@@ -25,8 +41,15 @@ class LevelList extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        handleHideRank() {
+        UpgradeLevel(key) {
+            const action = {
+                type: 'upgrade_level',
+                key: key
+            }
+            dispatch(action);
+        },
 
+        handleHideRank() {
             const action = {
                 type: 'hide_level'
             }
@@ -38,9 +61,10 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
-    console.log('state',state)
+    console.log('state', state)
     return {
-        levelIsOpen: state.levelIsOpen
+        levelIsOpen: state.levelIsOpen,
+        levels: state.levels
     }
 }
 

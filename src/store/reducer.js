@@ -10,17 +10,62 @@ const initState = {
     rankIsOpen: false,
     modalIsOpen: true,
     levelIsOpen: false,
+    powerIsOpen: false,
+    fightIsOpen: false,
     nameInput: '',
+    powerInput: '',
+    fightInput: '',
 	name: '',
     rankData:[1,2,3,4,5],
     fightRankData:[],
     timesRankData:[],
     monkey:[],
     player:[],
-    hasMonkey:false
+    levels:[],
+    hasMonkey:false,
+    nextDifficulty:0
 }
 
 export default (state = initState,action) => {
+    //init
+
+    if( action.type === 'no_monkey') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.hasMonkey = false;
+        return newState;
+    }
+
+    if( action.type === 'has_monkey') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.hasMonkey = true;
+        return newState;
+    }
+    if( action.type === 'set_monkey_info') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.monkey = action.monkey;
+        console.log('newState',newState)
+        return newState;
+    }
+
+    if( action.type === 'set_player_info') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.player = action.player;
+        // console.log('newState',newState)
+        return newState;
+    }
+    if( action.type === 'set_levels_info') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.levels = action.levels;
+        console.log('newState',newState)
+        return newState;
+    }
+
+    if( action.type === 'set_next_difficulty') {
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.nextDifficulty = action.nextDifficulty;
+        console.log('newState',newState)
+        return newState;
+    }
 
 	//rankList
     if( action.type === 'set_rank_data'){
@@ -42,12 +87,6 @@ export default (state = initState,action) => {
     }
 
     //LevelList
-    if( action.type === 'set_level_data'){
-        const newState = JSON.parse(JSON.stringify(state));
-        newState.fightRankData = action.data[0];
-        newState.timesRankData = action.data[1];
-        return newState;
-    }
 
     if( action.type === 'show_level'){
         const newState = JSON.parse(JSON.stringify(state));
@@ -61,25 +100,25 @@ export default (state = initState,action) => {
     }
 
     //modal
-    if( action.type === 'change_name_input'){
+    if( action.type === 'change_power_input'){
         const newState = JSON.parse(JSON.stringify(state));
-        newState.nameInput = action.value;
+        newState.powerInput = action.value;
         return newState;
     }
     if( action.type === 'set_name'){
         const newState = JSON.parse(JSON.stringify(state));
         newState.name = action.value;
-        newState.modalIsOpen = false;
+        newState.powerIsOpen = false;
         return newState;
     }
-    if( action.type === 'open_modal'){
+    if( action.type === 'open_power_modal'){
         const newState = JSON.parse(JSON.stringify(state));
-        newState.modalIsOpen = true;
+        newState.powerIsOpen = true;
         return newState;
     }
-    if( action.type === 'close_modal'){
+    if( action.type === 'close_power_modal'){
         const newState = JSON.parse(JSON.stringify(state));
-        newState.modalIsOpen = false;
+        newState.powerIsOpen = false;
         return newState;
     }
 
@@ -90,6 +129,22 @@ export default (state = initState,action) => {
     }
 
 
+    if( action.type === 'change_fight_input'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.fightInput = action.value;
+        return newState;
+    }
+    if( action.type === 'open_fight_modal'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.fightIsOpen = true;
+        return newState;
+    }
+    if( action.type === 'close_fight_modal'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.fightIsOpen = false;
+        return newState;
+    }
+
 	//example
 
     if( action.type === 'load_data') {
@@ -97,7 +152,6 @@ export default (state = initState,action) => {
         newState.res = action.data;
         return newState;
     }
-
 
     //
 	if( action.type === 'init_list_data'){
