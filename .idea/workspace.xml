@@ -1,58 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb28d77d-ad57-42f0-a370-a23c237a051b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/level-avatar_fg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level-avatarl_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level/level-46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level/level-avatar-46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level_avatar_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level_avatar_fg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level_fg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level_word_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/power_button_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/stage00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/stage02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LevelList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LevelList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Power.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Power.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RankList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RankList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Training.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Training.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar-01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar-02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar-03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar_fg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar_fg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/fight_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/fight_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-09.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-18.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-28.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-42.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-49.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-49.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-59.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-59.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-09.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-18.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-28.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-42.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-49.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-49.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-59.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-59.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/level_panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level_panel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/rank_button_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rank_button_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/rank_item_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rank_item_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/zhang.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/zhang.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/images.js" afterDir="false" />
-    </list>
+    <list default="true" id="cb28d77d-ad57-42f0-a370-a23c237a051b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -66,7 +15,7 @@
     <session id="-556439311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -513,7 +462,7 @@
       <workItem from="1536027278519" duration="407000" />
       <workItem from="1536980383850" duration="49073000" />
       <workItem from="1537230778674" duration="27875000" />
-      <workItem from="1537672050843" duration="25051000" />
+      <workItem from="1537672050843" duration="25514000" />
     </task>
     <task id="LOCAL-00001" summary="备份下">
       <created>1536987717090</created>
@@ -540,13 +489,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174806000" />
+    <option name="totallyTimeSpent" value="175269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1283906" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1283906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -560,7 +508,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.2053476" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31428573" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31428573" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
