@@ -14,7 +14,7 @@ const modalStyle = {
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
         background: 'url('+images.modal_bg+')',
-        width: 286,
+        width: 386,
         height: 554
     }
 };
@@ -38,8 +38,9 @@ class Training extends React.Component {
                 >
 
                     <div>
+                        <span>战斗力</span>
                         <input value={this.props.fightInput} onChange={this.props.handleChangeFightInput}/>
-                        <button onClick={this.handleTraining.bind(this, this.props.fightInput)}>确定</button>
+                        <button onClick={this.handleTraining.bind(this, this.props.fightInput)}>点击修炼</button>
                     </div>
                 </Modal>
             </div>

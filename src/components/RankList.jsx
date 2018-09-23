@@ -45,7 +45,10 @@ class RankList extends React.Component {
                      style={{background: 'url(' + images.rank_item_bg + ')'}}>
                     {/*key fight status level price*/}
                     {/*<img src={images.rank_item_bg} />*/}
-                    <span className='rank_item_text'>{idx + 1} {rowData[1]} {rowData[3]} {rowData[4] / 1e18}</span>
+                    <span className='rank_item_text'>{idx + 1}</span>
+                    <span className='rank_item_text'>{rowData[1]}</span>
+                    <span className='rank_item_text'> {rowData[3]}</span>
+                    <span className='rank_item_text'> {rowData[4] / 1e18}</span>
                 </div>
 
             </div>
@@ -72,11 +75,11 @@ class RankList extends React.Component {
                     {this.props.timesRankData.map((rowData, idx) => this.renderItem(rowData, idx))}
                 </div>
                 {/*将所需的值通过props传递给组件B*/}
-                <B
-                    dx={this.state.x}
-                    dy={this.state.y}
-                    detailShow={this.state.detailShow}
-                />
+                {/*<B*/}
+                    {/*dx={this.state.x}*/}
+                    {/*dy={this.state.y}*/}
+                    {/*detailShow={this.state.detailShow}*/}
+                {/*/>*/}
             </div>
         )
     }

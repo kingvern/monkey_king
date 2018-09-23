@@ -2,27 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb28d77d-ad57-42f0-a370-a23c237a051b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/fight_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level_item_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/level_item_fg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/modal_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/rank_button_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/rank_item_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level-avatar_fg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level-avatarl_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level/level-46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level/level-avatar-46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level_avatar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level_avatar_fg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level_fg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/level_word_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/power_button_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/stage00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/stage02.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abi/MonkeyCore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/abi/MonkeyCore.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LevelList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LevelList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Power.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Power.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RankList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RankList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Training.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Training.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/panel_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/panel_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/rank_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rank_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/mysaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/mysaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar_fg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/avatar_fg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/fight_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/fight_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-18.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-49.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-49.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-59.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-59.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-18.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-49.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-49.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level/level-avatar-59.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level/level-avatar-59.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/level_panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/level_panel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/rank_button_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rank_button_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/rank_item_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rank_item_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/zhang.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/zhang.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/theme/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/images.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -54,11 +82,11 @@
           <entry key="css" value="66" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="49" />
+          <entry key="js" value="50" />
           <entry key="json" value="13" />
-          <entry key="jsx" value="111" />
+          <entry key="jsx" value="112" />
           <entry key="md" value="4" />
-          <entry key="png" value="2" />
+          <entry key="png" value="3" />
           <entry key="sol" value="1" />
           <entry key="ts" value="1" />
         </counts>
@@ -67,10 +95,10 @@
         <counts>
           <entry key="CSS" value="66" />
           <entry key="HTML" value="1" />
-          <entry key="Image" value="2" />
+          <entry key="Image" value="3" />
           <entry key="JSON" value="12" />
-          <entry key="JSX Harmony" value="111" />
-          <entry key="JavaScript" value="49" />
+          <entry key="JSX Harmony" value="112" />
+          <entry key="JavaScript" value="50" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="TypeScript" value="1" />
           <entry key="tsconfig" value="1" />
@@ -78,23 +106,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2029" />
+          <entry key="css" value="2183" />
           <entry key="gitignore" value="8" />
           <entry key="html" value="2" />
-          <entry key="js" value="3547" />
+          <entry key="js" value="3566" />
           <entry key="json" value="31" />
-          <entry key="jsx" value="11051" />
+          <entry key="jsx" value="11248" />
           <entry key="md" value="21" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2029" />
+          <entry key="CSS" value="2183" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="31" />
-          <entry key="JSX Harmony" value="11051" />
-          <entry key="JavaScript" value="3547" />
+          <entry key="JSX Harmony" value="11248" />
+          <entry key="JavaScript" value="3566" />
           <entry key="PLAIN_TEXT" value="24" />
           <entry key="UNKNOWN" value="11" />
         </counts>
@@ -104,22 +132,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Home/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Panel.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+            <state relative-caret-position="281">
+              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -127,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Home/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="263" column="11" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
+            <state relative-caret-position="235">
+              <caret line="150" column="35" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -140,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/src/store/mysaga.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1939">
-              <caret line="225" column="36" lean-forward="true" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="36" />
+              <caret line="225" column="36" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="36" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
                 <element signature="n#!!block;n#test#0" />
@@ -167,11 +183,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LevelList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="171">
+              <caret line="26" column="189" selection-start-line="26" selection-start-column="135" selection-end-line="26" selection-end-column="189" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/RankList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Training.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="42" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Power.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="44" column="56" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="56" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -182,29 +231,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/theme/images.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Training.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Power.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -242,15 +270,15 @@
       <find>rank_button</find>
       <find>rank</find>
       <find>rank_panel_left</find>
-      <find>avatar</find>
       <find>status</find>
       <find>level</find>
       <find>api</find>
       <find>01</find>
-      <find>imagge</find>
       <find>level_panel</find>
-      <find>nextDifficulty</find>
       <find>showStyle</find>
+      <find>nextDifficulty</find>
+      <find>avatar</find>
+      <find>imagge</find>
     </findStrings>
     <replaceStrings>
       <replace>Wallet</replace>
@@ -336,16 +364,16 @@
         <option value="$PROJECT_DIR$/src/components/Actor.jsx" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/components/Power.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Panel.jsx" />
         <option value="$PROJECT_DIR$/src/containers/Home/index.jsx" />
         <option value="$PROJECT_DIR$/src/store/mysaga.js" />
-        <option value="$PROJECT_DIR$/src/components/RankList.jsx" />
-        <option value="$PROJECT_DIR$/src/theme/images.js" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/home.css" />
-        <option value="$PROJECT_DIR$/src/components/Training.jsx" />
         <option value="$PROJECT_DIR$/src/components/LevelList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/RankList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Panel.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Training.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Power.jsx" />
+        <option value="$PROJECT_DIR$/src/theme/images.js" />
+        <option value="$PROJECT_DIR$/src/containers/Home/home.css" />
       </list>
     </option>
   </component>
@@ -424,12 +452,6 @@
               <item name="travelbitmonkey" type="b2602c69:ProjectViewProjectNode" />
               <item name="travelbitmonkey" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="travelbitmonkey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="travelbitmonkey" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -491,7 +513,7 @@
       <workItem from="1536027278519" duration="407000" />
       <workItem from="1536980383850" duration="49073000" />
       <workItem from="1537230778674" duration="27875000" />
-      <workItem from="1537672050843" duration="22189000" />
+      <workItem from="1537672050843" duration="25051000" />
     </task>
     <task id="LOCAL-00001" summary="备份下">
       <created>1536987717090</created>
@@ -518,7 +540,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171944000" />
+    <option name="totallyTimeSpent" value="174806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -597,7 +619,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Tree.jsx" />
     <entry file="file://$PROJECT_DIR$/src/Routes.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -763,16 +784,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/level/level-12.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RankList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Home/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -783,62 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme/images.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="263" column="11" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/abi/MonkeyCore.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/mysaga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1939">
-          <caret line="225" column="36" lean-forward="true" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <element signature="n#!!block;n#test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Power.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Training.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -849,13 +808,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LevelList.jsx">
+    <entry file="file://$PROJECT_DIR$/src/images/level_avatar_bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/mysaga.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="1939">
+          <caret line="225" column="36" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="n#!!block;n#test#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/RankList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Training.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="42" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LevelList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="189" selection-start-line="26" selection-start-column="135" selection-end-line="26" selection-end-column="189" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme/images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Power.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="150" column="35" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
         </state>
       </provider>
     </entry>

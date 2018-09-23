@@ -22,8 +22,9 @@ const images = {
     stage01: require('../images/stage01.png'),
     tangseng: require('../images/tangseng.png'),
     modal_bg: require('../images/modal_bg.png'),
-    level_item_bg: require('../images/level_item_bg.png'),
-    level_item_fg: require('../images/level_item_fg.png'),
+    level_avatar_bg: require('../images/level_avatar_bg.png'),
+    level_avatar_fg: require('../images/level_avatar_fg.png'),
+    power_button_bg: require('../images/power_button_bg.png'),
 
     level_01_s:require('../images/level/level-avatar-09.png'),
     level_02_s:require('../images/level/level-avatar-12.png'),

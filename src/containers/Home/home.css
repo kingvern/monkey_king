@@ -122,8 +122,8 @@
 .rank_item_bg {
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 
     padding-left: 20px;
     width: 336px;
@@ -144,6 +144,16 @@
     left: 237px;
     width: 1445px;
     height: 815px;
+}
+.power_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.power_button{
+    width: 65px;
+    height: 336px;
+    font-size: 65px;
 }
 
 .actor {
@@ -269,6 +279,19 @@ span {
     height: 331px;
     overflow: hidden;
     float: left;
+}
+.level_item_button{
+    padding-right: 70px;
+    padding-top: 30px;
+    float: right;
+}
+.level_item_box{
+    padding-top: 40px;
+    width: 1445px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 @keyframes bgAnimation {

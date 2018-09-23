@@ -42,7 +42,7 @@ class Panel extends React.Component {
                 </div>
                 <div className="fight" style={{background:'url('+images.fight_bg+')'}}>
                     {/*<img className='absoluteImg' src={images.fight_bg}/>*/}
-                    <span>迎战</span>
+                    <span onClick={this.handleUpgradeLevel.bind(this, (this.props.player.level + 1))} >迎战</span>
                     <span>所需战力</span>
                     <span>{this.props.nextDifficulty} </span>
                 </div>
@@ -53,9 +53,9 @@ class Panel extends React.Component {
                         <span>{this.props.player.level ? this.props.player.level : '0'} </span>
                     </div>
                     <div className="status_item">
-                        <span onClick={this.handleUpgradeLevel.bind(this, (this.props.player.level + 1))}
+                        <span onClick={this.props.showLevel}
                         >历</span>
-                        <span onClick={this.handleUpgradeLevel.bind(this, (this.props.player.level + 1))}
+                        <span onClick={this.props.showLevel}
                         >史</span>
 
                     </div>

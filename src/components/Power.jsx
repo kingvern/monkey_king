@@ -13,8 +13,8 @@ const modalStyle = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        background: 'url('+images.modal_bg+')',
-        width: 286,
+        background: 'url(' + images.modal_bg + ')',
+        width: 386,
         height: 554
     }
 };
@@ -22,7 +22,7 @@ const modalStyle = {
 class Power extends React.Component {
 
     handleBuyPower(value) {
-        if(this.props.BuyPower){
+        if (this.props.BuyPower) {
             this.props.BuyPower(value)
         }
     }
@@ -38,10 +38,19 @@ class Power extends React.Component {
                 >
 
                     <div>
+                        <span>体力</span>
                         <input value={this.props.powerInput} onChange={this.props.handleChangePowerInput}/>
-                        <button onClick={this.handleBuyPower.bind(this, this.props.powerInput)}>确定</button>
+                        <div className='power_body'>
+
+                            <div className='power_button' style={{background:'url('+images.power_button_bg+')'}} onClick={this.props.FreePower}>领取体力</div>
+                            {/*<div className='power_button'>今日免费体力已领完</div>*/}
+                            {/*<div className='power_button'>可点击购买体力</div>*/}
+                            <div className='power_button' style={{background:'url('+images.power_button_bg+')'}}  onClick={this.handleBuyPower.bind(this, this.props.powerInput)}>购买体力</div>
+                        </div>
+                        {/*<input value={this.props.powerInput} onChange={this.props.handleChangePowerInput}/>*/}
+                        {/*<button onClick={this.handleBuyPower.bind(this, this.props.powerInput)}>确定</button>*/}
                     </div>
-                    <span onClick={this.props.FreePower}>领取体力</span>
+                    {/*<span onClick={this.props.FreePower}>领取体力</span>*/}
                 </Modal>
             </div>
         )
@@ -78,7 +87,7 @@ const mapDispatchToProps = (dispatch) => {
             }
             dispatch(action);
         },
-        FreePower(){
+        FreePower() {
             const action = {
                 type: 'free_power'
             }

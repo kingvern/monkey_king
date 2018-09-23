@@ -24,12 +24,12 @@ class LevelList extends React.Component {
     renderLevel = (level, idx) => {
         console.log('page:',this.props.firstPage , this.props.secondPage)
             return (
-                <div key={idx} className={ idx <= 5 ? this.props.firstPage+' level_item_bg' : this.props.secondPage+' level_item_bg'}  style={{background:'url('+images.level_item_bg+')'}} onClick={this.handleUpgradeLevel.bind(this,level.key)}>
-                    <span>{this.props.levelRes[idx].title}</span>
+                <div key={idx} className={ idx <= 5 ? this.props.firstPage+' level_item_bg' : this.props.secondPage+' level_item_bg'}  style={{background:'url('+images.level_avatar_bg+')'}} onClick={this.handleUpgradeLevel.bind(this,level.key)}>
+                    <span className='avatarBg'>{this.props.levelRes[idx].title}</span>
                     {/*{level.key}-{level.difficulty}-{level.special}-{level.specialcount}-{level.allcount}-{level.addrange}*/}
                     {/*-{level.addmin}-{level.state}*/}
-                    <img src={this.props.levelRes[idx].avatar} />
-                    {/*<img style={{position:'absolute',zIndex:3}} src={images.avatar_fg} />*/}
+                    <img className='avatarImg' src={this.props.levelRes[idx].avatar} />
+                    <img className='avatarFg' src={images.level_avatar_fg} />
                 </div>
             )
 
@@ -38,14 +38,15 @@ class LevelList extends React.Component {
     render() {
         return (
             <div  className={this.props.levelIsOpen ? 'level_panel' : 'hide'} style={{background:'url('+images.level_panel+')'}}>
-                <div >
+                <div className='level_item_button'>
 
                     <span onClick={this.props.gotoFistPage}>上一页</span>
                     <span onClick={this.props.gotoSecondPage}>下一页</span>
                     <span onClick={this.props.handleHideRank}>关闭</span>
                 </div>
-
+                <div className='level_item_box'>
                 {this.props.levels.map((level, idx) => this.renderLevel(level, idx))}
+                </div>
             </div>
         )
     }
