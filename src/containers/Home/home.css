@@ -1,95 +1,183 @@
+@font-face {
+    font-family: zhang;
+    src: url("zhang.ttf");
+}
+
+* {
+    font-family: zhang;
+}
 
 .stage {
     position: relative;
-    width: 1377px;
-    heigth: 768px;
+    width: 1920px;
+    heigth: 1080px;
     margin: 0 auto;
 }
 
 .panel {
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 668px;
+    position: absolute;
+    width: 1920px;
+    height: 198px;
+    top: 850px;
     left: 0;
-    width: 1388px;
-    height: 100px;
 }
 
 .avatar {
-    flex: 1
-
+    position: absolute;
+    top: 0px;
+    left: 100px;
 }
 
 .status_bar {
-    flex: 1
-
+    position: absolute;
+    top: 0px;
+    left: 320px;
+    width: 400px;
+    height: 198px;
+    text-align: center;
+    /*flex:1;*/
+    display: flex;
 }
 
 .fight {
-    flex: 1
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
 
+    width: 374px;
+    height: 265px;
+    top: -35px;
+    left: 773px;
+    /*flex:1;*/
+
+}
+
+.absoluteImg {
+    position: absolute;
+    z-index: -1;
 }
 
 .history {
-    flex: 1
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    /*flex:1*/
 
+}
+
+.level {
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    width: 400px;
+    height: 198px;
+    text-align: center;
+    /* flex: 1; */
+    display: flex;
+    /*flex:1*/
 }
 
 .rank_button {
-    flex: 1
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-}
+    width: 201px;
+    height: 198px;
 
-.rank_panel {
     position: absolute;
-    left: 900px;
-    width: 488px;
-    height: 568px;
+    top: 0px;
+    right: 100px;
+    /*flex:1;*/
 }
+
+.rank_panel_left {
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 386px;
+    height: 815px;
+    position: absolute;
+    left: 0;
+}
+
+.rank_panel_right {
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 386px;
+    height: 815px;
+    position: absolute;
+    right: 0;
+}
+
+.rank_item_bg {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 20px;
+    width: 336px;
+    height: 65px;
+}
+
+.rank_item_text {
+    font-size: 2em;
+}
+
+.rank_head_text {
+    font-size: 2em;
+}
+
 .level_panel {
     position: absolute;
-    left: 90px;
-    width: 488px;
-    height: 568px;
+    top: 0;
+    left: 237px;
+    width: 1445px;
+    height: 815px;
 }
 
 .actor {
 
-    width: 100px;
-    height: 160px;
 }
 
 .actorImg {
-    width: 100px;
-    height: 160px;
 }
 
 #sun {
     position: absolute;
-    top: 300px;
-    left: 200px;
+    top: 200px;
+    left: 1090px;
 }
 
 #tang {
     position: absolute;
-    top: 300px;
-    left: 500px;
+    top: 250px;
+    left: 600px;
 }
 
 .bg {
     position: absolute;
     display: block;
-    width: 1377px;
-    heigth: 768px;
+    width: 1920px;
+    heigth: 1080px;
     top: 0;
     left: 0;
 }
 
 .bgImg {
     position: absolute;
-    width: 1377px;
-    heigth: 768px;
+    width: 1920px;
+    heigth: 1080px;
     z-index: -2;
 }
 
@@ -99,8 +187,8 @@
 
 .bgDiv {
     position: absolute;
-    width: 1377px;
-    height: 768px;
+    width: 1920px;
+    height: 1080px;
     top: 0;
     left: 0;
     background: antiquewhite;
@@ -108,9 +196,29 @@
     overflow: hidden;
 }
 
+.avatarBg {
+    position: absolute;
+    z-index: 1;
+
+}
+
 .avatarImg {
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    z-index: 2;
+}
+
+.avatarFg {
+    position: absolute;
+    z-index: 3;
+
+}
+
+.status_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 .white {
@@ -119,31 +227,57 @@
 
 .panel_bg {
     position: absolute;
-    width: 1377px;
-    height: 100px;
+    opacity: 1;
     z-index: -1;
 }
-.level_bg{
+
+.level_bg {
     position: absolute;
     width: 1077px;
     height: 600px;
     z-index: -1;
 }
-.rank_bg{
+
+.rank_bg {
     position: absolute;
-    width: 488px;
-    height: 568px;
     z-index: -1;
 }
-.bgAni{
+
+.bgAni {
     position: absolute;
-    height: 768px;
+    height: 1080px;
     z-index: -3;
     animation: linear 60s infinite bgAnimation;
 }
 
-@keyframes bgAnimation
-{
-    0%   {left:0px; top:0px;}
-    100% {left:-17832px; top:0px;}
+span {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    margin: 0;
+}
+
+.showStyle {
+}
+
+.hideStyle {
+    display: none;
+}
+
+.level_item_bg{
+    width: 451px;
+    height: 331px;
+    overflow: hidden;
+    float: left;
+}
+
+@keyframes bgAnimation {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: -17832px;
+        top: 0px;
+    }
 }

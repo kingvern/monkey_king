@@ -2,6 +2,7 @@ import React from 'react'
 
 import Modal from 'react-modal';
 import {connect} from "react-redux";
+import images from "../theme/images";
 
 
 const modalStyle = {
@@ -11,7 +12,10 @@ const modalStyle = {
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
+        transform: 'translate(-50%, -50%)',
+        background: 'url('+images.modal_bg+')',
+        width: 286,
+        height: 554
     }
 };
 
@@ -37,7 +41,7 @@ class Power extends React.Component {
                         <input value={this.props.powerInput} onChange={this.props.handleChangePowerInput}/>
                         <button onClick={this.handleBuyPower.bind(this, this.props.powerInput)}>确定</button>
                     </div>
-                    <h3 onClick={this.props.FreePower}>领取体力</h3>
+                    <span onClick={this.props.FreePower}>领取体力</span>
                 </Modal>
             </div>
         )

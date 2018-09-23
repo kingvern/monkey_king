@@ -6,7 +6,7 @@ import {web3} from "wallet";
 const abi = require("../abi/MonkeyCore").abi;
 const main = web3.loadContract(
     abi,
-    "0x51e75333304a38805eb191a27bd3c5487f9d52df"
+    "0x089f8d30a73e2c994bbece2984c5639ff9b176a5"
 );
 console.log(main);
 
@@ -99,7 +99,7 @@ function* UpgradeLevel(action) {
 
 //Read form api
 
-const api = 'http://58.87.125.190:9996'
+const api = 'https://www.yimixiaoyuan.top'
 const get_free_monkey_count = '/travelmonkey/api/v1/get_free_monkey_count/'
 const get_owner_info = '/travelmonkey/api/v1/get_owner_info/'
 const get_monkey_info = '/travelmonkey/api/v1/get_monkey_info/'
@@ -223,7 +223,7 @@ function* load() {
             state: res.data[5]
         }
         console.log('set_player_info', player)
-        var nextLevel = player.level + 1
+        var nextLevel = player.level
         yield put({type: "set_player_info", player});
 
         res = yield axios.get(api + get_monkey_info + monkey_key + '/' + from_address);
@@ -282,6 +282,7 @@ function* load() {
 }
 
 function* refreshRankData() {
+
 
 }
 

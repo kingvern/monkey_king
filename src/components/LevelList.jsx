@@ -22,17 +22,29 @@ class LevelList extends React.Component {
     }
 
     renderLevel = (level, idx) => {
-        return (
-            <div key={idx} onClick={this.handleUpgradeLevel.bind(this,level.key)}>{level.key}-{level.difficulty}-{level.special}-{level.specialcount}-{level.allcount}-{level.addrange}
-            -{level.addmin}-{level.state}</div>
-        )
+        console.log('page:',this.props.firstPage , this.props.secondPage)
+            return (
+                <div key={idx} className={ idx <= 5 ? this.props.firstPage+' level_item_bg' : this.props.secondPage+' level_item_bg'}  style={{background:'url('+images.level_item_bg+')'}} onClick={this.handleUpgradeLevel.bind(this,level.key)}>
+                    <span>{this.props.levelRes[idx].title}</span>
+                    {/*{level.key}-{level.difficulty}-{level.special}-{level.specialcount}-{level.allcount}-{level.addrange}*/}
+                    {/*-{level.addmin}-{level.state}*/}
+                    <img src={this.props.levelRes[idx].avatar} />
+                    {/*<img style={{position:'absolute',zIndex:3}} src={images.avatar_fg} />*/}
+                </div>
+            )
+
     }
 
     render() {
         return (
-            <div onClick={this.props.handleHideRank} className={this.props.levelIsOpen ? 'level_panel' : 'hide'}>
+            <div  className={this.props.levelIsOpen ? 'level_panel' : 'hide'} style={{background:'url('+images.level_panel+')'}}>
+                <div >
 
-                <img className='level_bg' src={images.level_panel}/>
+                    <span onClick={this.props.gotoFistPage}>上一页</span>
+                    <span onClick={this.props.gotoSecondPage}>下一页</span>
+                    <span onClick={this.props.handleHideRank}>关闭</span>
+                </div>
+
                 {this.props.levels.map((level, idx) => this.renderLevel(level, idx))}
             </div>
         )
@@ -54,6 +66,18 @@ const mapDispatchToProps = (dispatch) => {
                 type: 'hide_level'
             }
             dispatch(action);
+        },
+        gotoFistPage() {
+            const action = {
+                type: 'goto_firstPage'
+            }
+            dispatch(action);
+        },
+        gotoSecondPage(){
+            const action = {
+                type: 'goto_secondPage'
+            }
+            dispatch(action);
         }
 
 
@@ -64,7 +88,11 @@ const mapStateToProps = (state) => {
     console.log('state', state)
     return {
         levelIsOpen: state.levelIsOpen,
-        levels: state.levels
+        levels: state.levels,
+        levelRes: state.levelRes,
+        curPage: state.curLevelPage,
+        firstPage: state.fistLevelPage,
+        secondPage: state.secondLevelPage,
     }
 }
 

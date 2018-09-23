@@ -1,7 +1,10 @@
 const images = {
-    avatar: 'http://images.liqucn.com/img/h1/h988/img201711251404250_info400X400.jpg',
-    sun: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537030305425&di=1893a52841587b5075fe270f0e828108&imgtype=0&src=http%3A%2F%2Fwww.cnhuadong.net%2Fuploadfiles%2Fimages%2F2013-5-11%2F2013511162355797.jpg',
-    tang: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2744486825,2295645810&fm=26&gp=0.jpg',
+    avatar: require('../images/avatar-01.png'),
+    avatar_bg: require('../images/avatar_bg.png'),
+    avatar_fg: require('../images/avatar_fg.png'),
+    fight_bg: require('../images/fight_bg.png'),
+    rank_button_bg: require('../images/rank_button_bg.png'),
+    rank_item_bg: require('../images/rank_item_bg.png'),
     level01: require('../images/level01.png'),
     level01_fbg: require('../images/level01_fbg.png'),
     level03_fbg: require('../images/level03_fbg.png'),
@@ -17,7 +20,35 @@ const images = {
     rank_bg: require('../images/rank_bg.png'),
     stage00: require('../images/stage00.jpg'),
     stage01: require('../images/stage01.png'),
-    tangseng: require('../images/tangseng.png')
+    tangseng: require('../images/tangseng.png'),
+    modal_bg: require('../images/modal_bg.png'),
+    level_item_bg: require('../images/level_item_bg.png'),
+    level_item_fg: require('../images/level_item_fg.png'),
+
+    level_01_s:require('../images/level/level-avatar-09.png'),
+    level_02_s:require('../images/level/level-avatar-12.png'),
+    level_03_s:require('../images/level/level-avatar-16.png'),
+    level_04_s:require('../images/level/level-avatar-18.png'),
+    level_05_s:require('../images/level/level-avatar-20.png'),
+    level_06_s:require('../images/level/level-avatar-28.png'),
+    level_07_s:require('../images/level/level-avatar-42.png'),
+    level_08_s:require('../images/level/level-avatar-48.png'),
+    level_09_s:require('../images/level/level-avatar-49.png'),
+    level_10_s:require('../images/level/level-avatar-59.png'),
+
+    level_01:require('../images/level/level-09.png'),
+    level_02:require('../images/level/level-12.png'),
+    level_03:require('../images/level/level-16.png'),
+    level_04:require('../images/level/level-18.png'),
+    level_05:require('../images/level/level-20.png'),
+    level_06:require('../images/level/level-28.png'),
+    level_07:require('../images/level/level-42.png'),
+    level_08:require('../images/level/level-48.png'),
+    level_09:require('../images/level/level-49.png'),
+    level_10:require('../images/level/level-59.png'),
+
+
+
 }
 
 export default images

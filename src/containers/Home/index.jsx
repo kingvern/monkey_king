@@ -15,7 +15,7 @@ import Training from "../../components/Training";
 
 class Home extends React.Component {
     componentDidMount() {
-
+        this.props.load()
         this.timerID = setInterval(
             () => {
                 this.props.load()
@@ -39,10 +39,11 @@ class Home extends React.Component {
                     <Panel />
                     <Power />
                     <Training />
-                    <RankList />
-                    <LevelList />
                     {this.props.hasMonkey ? <Actor id={'sun'} src={images.monkey1} /> : <h1 onClick={this.props.freeMonkey}>免费获取猴子</h1>}
                     <Actor id={'tang'} src={images.tangseng} />
+
+                    <RankList />
+                    <LevelList />
                     {/*<Name />*/}
                 </div>
 
