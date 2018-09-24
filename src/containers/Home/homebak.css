@@ -221,18 +221,18 @@
 
 .avatarBg {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 
 }
 
 .avatarImg {
     position: absolute;
-    z-index: 0;
+    z-index: 2;
 }
 
 .avatarFg {
     position: absolute;
-    z-index: 0;
+    z-index: 3;
 
 }
 

@@ -13,16 +13,17 @@ const modalStyle = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        background: 'url('+images.modal_bg+')',
+        background: 'url(' + images.modal_bg + ')',
         width: 386,
-        height: 554
+        height: 554,
+        paddingTop: 80
     }
 };
 
 class Training extends React.Component {
 
     handleTraining(value) {
-        if(this.props.Training){
+        if (this.props.Training) {
             this.props.Training(value)
         }
     }
@@ -37,10 +38,14 @@ class Training extends React.Component {
                     contentLabel=""
                 >
 
-                    <div>
-                        <span>战斗力</span>
+                    <div className='training_box'>
                         <input value={this.props.fightInput} onChange={this.props.handleChangeFightInput}/>
-                        <button onClick={this.handleTraining.bind(this, this.props.fightInput)}>点击修炼</button>
+                        <span>修炼战力</span>
+
+                        <div className='YesBox' style={{background: 'url(' + images.fight_bg + ')'}}>
+                            <span className='Yes'
+                                  onClick={this.handleTraining.bind(this, this.props.fightInput)}>确定</span>
+                        </div>
                     </div>
                 </Modal>
             </div>

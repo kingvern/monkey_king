@@ -23,6 +23,7 @@ class LevelList extends React.Component {
 
     renderLevel = (level, idx) => {
         console.log('page:',this.props.firstPage , this.props.secondPage)
+        let curLevel = this.props.player.level ? this.props.player.level : '0'
             return (
                 <div key={idx} className={ idx <= 5 ? this.props.firstPage+' level_item_bg' : this.props.secondPage+' level_item_bg'}  style={{background:'url('+images.level_avatar_bg+')'}} onClick={this.handleUpgradeLevel.bind(this,level.key)}>
                     <span className='avatarBg'>{this.props.levelRes[idx].title}</span>
@@ -30,6 +31,7 @@ class LevelList extends React.Component {
                     {/*-{level.addmin}-{level.state}*/}
                     <img className='avatarImg' src={this.props.levelRes[idx].avatar} />
                     <img className='avatarFg' src={images.level_avatar_fg} />
+                    <img className={idx < curLevel ? 'pass_seal' : 'avatarFg'} src={idx < curLevel ? images.pass_seal : images.not_pass} />
                 </div>
             )
 
@@ -88,6 +90,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
     console.log('state', state)
     return {
+        player: state.player,
         levelIsOpen: state.levelIsOpen,
         levels: state.levels,
         levelRes: state.levelRes,

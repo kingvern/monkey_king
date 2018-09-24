@@ -12,10 +12,11 @@ const initState = {
     rankIsOpen: false,
     modalIsOpen: true,
     levelIsOpen: false,
+    HistoryIsOpen: false,
     powerIsOpen: false,
     fightIsOpen: false,
     nameInput: '',
-    powerInput: '',
+    powerInput: '5',
     fightInput: '',
 	name: '',
     rankData:[1,2,3,4,5],
@@ -29,6 +30,9 @@ const initState = {
     curLevelPage:0,
     fistLevelPage: 'showStyle',
     secondLevelPage: 'hideStyle',
+    curHistoryPage:0,
+    fistHistoryPage: 'showStyle',
+    secondHistoryPage: 'hideStyle',
     levelRes:[
         {
             title:'第九难 陡涧换马',
@@ -165,6 +169,7 @@ export default (state = initState,action) => {
     if( action.type === 'show_level'){
         const newState = JSON.parse(JSON.stringify(state));
         newState.levelIsOpen = true;
+        newState.HistoryIsOpen = false;
         return newState;
     }
     if( action.type === 'hide_level'){
@@ -185,6 +190,31 @@ export default (state = initState,action) => {
         return newState;
     }
 
+    //History
+
+    if( action.type === 'show_History'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.HistoryIsOpen = true;
+        newState.levelIsOpen = false;
+        return newState;
+    }
+    if( action.type === 'hide_History'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.HistoryIsOpen = false;
+        return newState;
+    }
+    if( action.type === 'goto_firstPage_h'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.fistHistoryPage = 'showStyle';
+        newState.secondHistoryPage = 'hideStyle';
+        return newState;
+    }
+    if( action.type === 'goto_secondPage_h'){
+        const newState = JSON.parse(JSON.stringify(state));
+        newState.fistHistoryPage = 'hideStyle';
+        newState.secondHistoryPage = 'showStyle';
+        return newState;
+    }
     //modal
     if( action.type === 'change_power_input'){
         const newState = JSON.parse(JSON.stringify(state));

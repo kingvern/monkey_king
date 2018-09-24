@@ -12,6 +12,7 @@ import './home.css'
 import LevelList from "../../components/LevelList";
 import Power from "../../components/Power";
 import Training from "../../components/Training";
+import History from "../../components/History";
 
 class Home extends React.Component {
     componentDidMount() {
@@ -44,6 +45,7 @@ class Home extends React.Component {
 
                     <RankList />
                     <LevelList />
+                    <History />
                     {/*<Name />*/}
                 </div>
 

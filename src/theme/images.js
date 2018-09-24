@@ -17,6 +17,8 @@ const images = {
     monkey3: require('../images/monkey3.png'),
     panel_bg: require('../images/panel_bg.png'),
     pass_seal: require('../images/pass_seal.png'),
+    not_pass: require('../images/not_pass.png'),
+
     rank_bg: require('../images/rank_bg.png'),
     stage00: require('../images/stage00.jpg'),
     stage01: require('../images/stage01.png'),

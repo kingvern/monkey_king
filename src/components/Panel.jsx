@@ -53,9 +53,9 @@ class Panel extends React.Component {
                         <span>{this.props.player.level ? this.props.player.level : '0'} </span>
                     </div>
                     <div className="status_item">
-                        <span onClick={this.props.showLevel}
+                        <span onClick={this.props.showLevelH}
                         >历</span>
-                        <span onClick={this.props.showLevel}
+                        <span onClick={this.props.showLevelH}
                         >史</span>
 
                     </div>
@@ -121,6 +121,13 @@ const mapDispatchToProps = (dispatch) => {
 
             const action = {
                 type: 'show_level'
+            }
+            dispatch(action);
+        },
+        showLevelH() {
+
+            const action = {
+                type: 'show_History'
             }
             dispatch(action);
         },
