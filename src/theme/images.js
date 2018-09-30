@@ -50,7 +50,9 @@ const images = {
     level_09:require('../images/level/level-49.png'),
     level_10:require('../images/level/level-59.png'),
 
-
+    start_button: require('../images/start_all.png'),
+    buy_power_change: require('../images/buy_power_change.png'),
+    buy_power_num: require('../images/buy_power_num.png'),
 
 }
 

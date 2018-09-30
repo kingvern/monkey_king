@@ -45,20 +45,39 @@ class Power extends React.Component {
                     <div>
                         <span className='modal_container'>体力</span>
 
-                        <div className='power_body' onMouseLeave={() => this.setState({mouseStatus: 0})}>
-                            <input className={this.state.mouseStatus == 2 ? 'power_button' : 'hideStyle'} value={this.props.powerInput}
-                                   onChange={this.props.handleChangePowerInput} />
-                            <div className={this.state.mouseStatus == 2 ? 'hideStyle' : 'power_button'} style={{background: 'url(' + images.power_button_bg + ')'}}
-                                 onClick={this.props.FreePower} onMouseOver={() => this.setState({mouseStatus: 1})} onMouseLeave={() => this.setState({mouseStatus: 0})}>领取体力
+                        <div className='power_body'
+                             // onMouseLeave={() => this.setState({mouseStatus: 0})}
+                        >
+                            <div className={this.state.mouseStatus == 2 ? 'buy_power_box' : 'hideStyle'}>
+                                <div className='buy_power_change' style={{background:'url('+images.buy_power_change+')'}} onClick={this.props.addPowerInput}>
+                                    <p>+</p>
+                                </div>
+                                <input className='buy_power_change'  style={{background:'url('+images.buy_power_change+')'}}
+                                       value={this.props.powerInput}
+                                       onChange={this.props.handleChangePowerInput}/>
+                                <div className='buy_power_change' style={{background:'url('+images.buy_power_change+')'}} onClick={this.props.rmPowerInput}>
+                                    <p>-</p>
+                                </div>
                             </div>
-                            <div className={this.state.mouseStatus == 1 ? 'power_button_hint' : 'hideStyle'}>今日免费体力已领完
+
+                            <div className={this.state.mouseStatus == 2 ? 'hideStyle' : 'power_button'}
+                                 style={{background: 'url(' + images.power_button_bg + ')'}}
+                                 onClick={this.props.FreePower} >领取体力
                             </div>
-                            <div className={this.state.mouseStatus == 1 ? 'power_button_hint' : 'hideStyle'}>可点击购买体力
+                            <div className={this.props.hasFreePower ? 'power_button_hint' : 'hideStyle'}>今日免费体力已领完
+                            </div>
+                            <div className={this.props.hasFreePower ? 'power_button_hint' : 'hideStyle'}>可点击购买体力
                             </div>
                             <div className={this.state.mouseStatus == 1 ? 'hideStyle' : 'power_button'}
                                  style={{background: 'url(' + images.power_button_bg + ')'}}
-                                 onClick={this.handleBuyPower.bind(this, this.props.powerInput)} onMouseOver={() => this.setState({mouseStatus: 2})}
-                                 >购买体力
+                                 // onClick={this.handleBuyPower.bind(this, this.props.powerInput)}
+                                 onClick={() => {
+                                     if(this.state.mouseStatus != 2)
+                                         this.setState({mouseStatus: 2})
+                                     else
+                                         this.handleBuyPower.bind(this, this.props.powerInput)
+                                 }}
+                            >购买体力
                             </div>
                         </div>
                         {/*<input value={this.props.powerInput} onChange={this.props.handleChangePowerInput}/>*/}
@@ -93,6 +112,18 @@ const mapDispatchToProps = (dispatch) => {
             }
             dispatch(action);
         },
+        addPowerInput(){
+            const action = {
+                type: 'add_power_input'
+            }
+            dispatch(action);
+        },
+        rmPowerInput(){
+            const action = {
+                type: 'rm_power_input'
+            }
+            dispatch(action);
+        },
 
         BuyPower(value) {
             const action = {
@@ -112,6 +143,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
+        hasFreePower: state.hasFreePower,
         powerIsOpen: state.powerIsOpen,
         powerInput: state.powerInput
     }

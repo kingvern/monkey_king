@@ -39,7 +39,7 @@ class Training extends React.Component {
                 >
 
                     <div className='training_box'>
-                        <input value={this.props.fightInput} onChange={this.props.handleChangeFightInput}/>
+                        <input value={this.props.fightInput} className={'training_input'} onChange={this.props.handleChangeFightInput}/>
                         <span>修炼战力</span>
 
                         <div className='YesBox' style={{background: 'url(' + images.fight_bg + ')'}}>

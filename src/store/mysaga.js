@@ -57,6 +57,7 @@ function* BuyMonkey(action) {
 function* FreePower() {
     try {
         const res = yield main.FreePower();
+        yield put({type: "free_power_success"})
         console.log('FreePower', res)
     } catch (e) {
         console.log(e)

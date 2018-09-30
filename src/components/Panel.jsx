@@ -49,14 +49,12 @@ class Panel extends React.Component {
                 <div className="level">
                     <div className="status_item">
                         <span onClick={this.props.showLevel}
-                        >目前通关</span>
+                        >已通关</span>
                         <span>{this.props.player.level ? this.props.player.level : '0'} </span>
                     </div>
-                    <div className="status_item">
+                    <div className="status_item_history">
                         <span onClick={this.props.showLevelH}
-                        >历</span>
-                        <span onClick={this.props.showLevelH}
-                        >史</span>
+                        >历<br/>史</span>
 
                     </div>
                 </div>

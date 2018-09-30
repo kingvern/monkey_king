@@ -40,7 +40,9 @@ class Home extends React.Component {
                     <Panel />
                     <Power />
                     <Training />
-                    {this.props.hasMonkey ? <Actor id={'sun'} src={images.monkey1} /> : <h1 onClick={this.props.freeMonkey}>免费获取猴子</h1>}
+                    {this.props.hasMonkey ? <Actor id={'sun'} src={images.monkey1} /> : (<div id={'start_button'} className="fight" style={{background:'url('+images.fight_bg+')'}} onClick={this.props.freeMonkey}>
+                        <span>领取猴子</span>
+                    </div>)}
                     <Actor id={'tang'} src={images.tangseng} />
 
                     <RankList />

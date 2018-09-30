@@ -151,6 +151,35 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.buy_power_box{
+    height: 336px;
+    flex: 3;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buy_power_change{
+    color: white;
+    width: 208px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 65px;
+}
+.buy_power_num{
+    width: 208px;
+    height: 300px;
+    font-size: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .power_button{
     color: white;
     width: 65px;
@@ -168,7 +197,12 @@
 .power_button:hover{
     color: brown;
 }
-
+.training_input{
+    color: brown;
+    text-align: center;
+    font-size: 65px;
+    padding-top: 30px;
+}
 .actor {
 
 }
@@ -179,6 +213,12 @@
 #sun {
     position: absolute;
     top: 200px;
+    left: 1090px;
+}
+
+#start_button {
+    position: absolute;
+    top: 500px;
     left: 1090px;
 }
 
@@ -243,7 +283,13 @@
     text-align: center;
     justify-content: center;
 }
-
+.status_item_history{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
 .white {
     color: white;
 }
@@ -278,6 +324,11 @@ span {
     font-size: 3em;
     color: white;
     margin: 0;
+}
+
+span:hover{
+    color: brown;
+    font-size: 3.5em;
 }
 
 .showStyle {
