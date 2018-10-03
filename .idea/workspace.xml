@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb28d77d-ad57-42f0-a370-a23c237a051b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/buy_power_change.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/buy_power_num.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/start_all.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/zhang.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/zhang.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Power.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Power.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Training.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Training.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/mysaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/mysaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/images.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +17,7 @@
     <session id="-556439311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -176,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Panel.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+            <state relative-caret-position="50">
+              <caret line="38" column="75" lean-forward="true" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -360,8 +348,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="542" />
-    <option name="y" value="504" />
+    <option name="x" value="289" />
+    <option name="y" value="23" />
     <option name="width" value="1630" />
     <option name="height" value="862" />
   </component>
@@ -386,6 +374,24 @@
               <item name="travelbitmonkey" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="travelbitmonkey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="travelbitmonkey" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="travelbitmonkey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="travelbitmonkey" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="travelbitmonkey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="travelbitmonkey" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -402,9 +408,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers/Home" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/src/containers/Home" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/abi" />
     </key>
@@ -448,7 +454,7 @@
       <workItem from="1537230778674" duration="27875000" />
       <workItem from="1537672050843" duration="25514000" />
       <workItem from="1537790864676" duration="7851000" />
-      <workItem from="1538139065556" duration="5255000" />
+      <workItem from="1538139065556" duration="5735000" />
     </task>
     <task id="LOCAL-00001" summary="备份下">
       <created>1536987717090</created>
@@ -475,12 +481,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188375000" />
+    <option name="totallyTimeSpent" value="188855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="46" width="1630" height="862" extended-state="0" />
+    <frame x="289" y="23" width="1630" height="862" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13175885" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13175885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -494,7 +500,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.2053476" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.046753246" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39740258" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -813,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+        <state relative-caret-position="50">
+          <caret line="38" column="75" lean-forward="true" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
